@@ -16,7 +16,7 @@ public class LogInServlet extends HttpServlet {
 
         String navn = request.getParameter("navn");
         String kodeord = request.getParameter("kodeord");
-        if (servletContext.getAttribute("burgerMap") == null) {
+        if (servletContext.getAttribute("brugerMap") == null) {
 
             Map<String, String> brugerMap = new HashMap<>();
 
@@ -29,7 +29,7 @@ public class LogInServlet extends HttpServlet {
             // todo gå til login siden.
             // response.getWriter().println("Brugeren findes !");
 
-            request.setAttribute("besked", "Forket brugernavn.");
+            request.setAttribute("besked", "Opret dig som bruger");
             request.getRequestDispatcher("WEB-INF/OpretBruger.jsp").forward(request,response);
 
         }

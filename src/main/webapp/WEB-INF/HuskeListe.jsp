@@ -8,10 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Huskelste</title>
+    <title>Huskeliste</title>
 </head>
 <body>
-
+<h1>Du er nu på din huskeliste og er klar til at tilføle emner</h1>
 
 
 </body>
