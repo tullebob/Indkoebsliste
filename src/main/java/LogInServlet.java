@@ -30,7 +30,7 @@ public class LogInServlet extends HttpServlet {
             // response.getWriter().println("Brugeren findes !");
 
             request.setAttribute("besked", "Forket brugernavn.");
-            request.getRequestDispatcher("index.jsp").forward(request,response);
+            request.getRequestDispatcher("WEB-INF/OpretBruger.jsp").forward(request,response);
 
         }
 
