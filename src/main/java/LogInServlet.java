@@ -36,6 +36,10 @@ public class LogInServlet extends HttpServlet {
             servletContext.setAttribute("aktiveBrugere",aktiveBrugere);
         }
 
+        if ( ! (session.getAttribute("besked") == null) ) {
+            request.getRequestDispatcher("WEB-INF/HuskeListe.jsp").forward(request,response);
+        }
+
         if (!((Map<String, String>) servletContext.getAttribute("brugerMap")).containsKey(navn)) {
 
             // todo gå til login siden.
